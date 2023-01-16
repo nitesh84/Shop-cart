@@ -31,6 +31,9 @@ const add=document.getElementById("add-btn")
 
      let final=document.getElementById("all-items");
      final.innerHTML=grandTotal;
+
+     document.getElementById("data-item").value="";
+     document.getElementById("data-price").value="";
      
 });
 
