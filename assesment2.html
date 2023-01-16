@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assesment2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assessment2.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Grocery List</h1>
+<!--input fields -->
+<form>
+        <input id="data-item" type="text" placeholder="Item-name"  />
+        <input id="data-quantity" type="number" placeholder="No. of items" min=1 value=1 />
+        <input id="data-price" type="number" placeholder="Price" min=0  />
+</form>
+<button type="Submit" id="add-btn">Add</button>
+
+
+<table>
+    <thead>
+        <tr>
+             <th>Sr. No.</th>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price(per unit)</th>
+            <th>Price(subtotal)</th>
+            <th></th>
+        </tr>
+    </thead>
+        <tbody id="tbody">
+
+        </tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="all-items"></td>
+        </tr>
+</table>
+
+    
+</body>
+</html>
