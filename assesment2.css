@@ -12,3 +12,31 @@ table,th,td{
 .table td img{
 width: 10em;
 }
+
+body h1,form{
+    text-align: center;
+    position: relative;
+}
+
+table{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+}
+
+/* .red-btn{
+    background-color: rgba(134, 71, 3, 0.645);
+    color:white;
+    margin: 2px 2px 2px 12.5%;
+
+    padding: 2.5px;
+    
+} */
+
+#add-btn{
+    position: absolute;
+    top: 1  0%;
+    left: 50%;
+}
