@@ -49,7 +49,7 @@ document.getElementsByTagName("tbody")[0]
         console.log(document.getElementsByTagName("button").length  );
         for(let i=1;i<document.getElementsByTagName("button").length;i++  )
         {
-            console.log("dataset: ",t.getElementsByTagName("buttodocumenn")[i].dataset.id);
+            console.log("dataset: ",document.getElementsByTagName("button")[i].dataset.id);
             console.log("datavalue:",document.getElementById("data-item").value);
             if(document.getElementsByTagName("button")[i].dataset.id==document.getElementById("data-item").value){
                 console.log(` Found : ${document.getElementById("data-item").value}`);
