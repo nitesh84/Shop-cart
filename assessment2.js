@@ -25,15 +25,37 @@ const add=document.getElementById("add-btn")
     button.type="submit";
     button.innerHTML="Remove";
     console.log(button);
-
+    button.className="red-btn";
+   
     dataRow.appendChild(remove).appendChild(button);
-    
+
+    button.setAttribute('data-id',document.getElementById("data-item").value);
 
      let final=document.getElementById("all-items");
      final.innerHTML=grandTotal;
 
      document.getElementById("data-item").value="";
      document.getElementById("data-price").value="";
+     document.getElementById("data-quantity").value=1;
      
 });
 
+
+document.getElementsByTagName("tbody")[0]
+.addEventListener('click',(e)=>{
+   
+    if(e.target.classList.contains("red-btn"))
+    {   
+        console.log(document.getElementsByTagName("button").length  );
+        for(let i=1;i<document.getElementsByTagName("button").length;i++  )
+        {
+            console.log("dataset: ",t.getElementsByTagName("buttodocumenn")[i].dataset.id);
+            console.log("datavalue:",document.getElementById("data-item").value);
+            if(document.getElementsByTagName("button")[i].dataset.id==document.getElementById("data-item").value){
+                console.log(` Found : ${document.getElementById("data-item").value}`);
+            }
+        }
+        console.log(document.getElementsByTagName("tr"));
+        console.log("Remove clicked");
+    }
+})
